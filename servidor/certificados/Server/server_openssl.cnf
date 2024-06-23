@@ -1,0 +1,25 @@
+[ req ]
+prompt = no
+default_bits = 2048
+default_md = sha256
+req_extensions = req_ext
+x509_extensions = v3_ca  
+distinguished_name = dn
+
+[ dn ]
+C = ES
+ST = Valencia
+L = Valencia
+O = Test
+OU = Test
+CN = 127.0.0.1
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ v3_ca ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+IP.1 = 127.0.0.1
+IP.2 = 84.120.88.217

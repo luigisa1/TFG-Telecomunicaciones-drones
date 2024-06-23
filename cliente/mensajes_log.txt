@@ -1,0 +1,9 @@
+2024-06-18 12:15:53 - (1718705753) -> Mensaje Inicio
+2024-06-18 12:15:59 - (1718705759) -> Mensaje Alarma sin xdata
+2024-06-18 12:16:04 - (1718705764) -> Mensaje Alarma con coord
+2024-06-18 12:16:09 - (1718705769) -> Mensaje Null
+2024-06-18 12:16:14 - (1718705774) -> Mensaje Caida Sistema
+2024-06-18 12:16:22 - (1718705782) -> Mensaje Alarma con video y coord
+2024-06-18 12:16:28 - (1718705788) -> Mensaje Inicio
+2024-06-18 12:16:33 - (1718705793) -> Mensaje Alarma sin xdata
+2024-06-18 12:16:38 - (1718705798) -> Mensaje Alarma con coord

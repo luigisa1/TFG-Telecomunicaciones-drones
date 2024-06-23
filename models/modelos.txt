@@ -1,0 +1,7 @@
+best.engine bastate consistente, pocos falsos positivos, en frames escasos, bien con sol de cara pero arriba con conf=0.4 va bien
+best_2.engine tamño 1280 muchos falsos positivos, no va muy bien
+grb_640.engine mucho fdalso positivo, le cuesta un poco 
+grb_928_do.engine bastante falso positivo, le cuesta tambien
+train6.engine muy lento
+medium_1.engine
+medium_2.engine

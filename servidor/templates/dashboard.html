@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DIADRON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #002853;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #dee2e6;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ff6800;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e9ecef;
+        }
+
+        a {
+            color: #002853;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .logout {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px;
+            background-color: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .logout:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bienvenido, {{ session['nombre'] }}!</h1>
+    <h2>Lista de Alarmas</h2>
+    <table>
+        <tr>
+            <th>Receptor</th>
+            <th>Prefijo</th>
+            <th>Cuenta</th>
+            <th>Protocolo</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Video</th>
+            <th>Coordenadas</th>
+        </tr>
+        {% for alarma in alarmas %}
+        <tr>
+            <td>{{ alarma.receptor }}</td>
+            <td>{{ alarma.prefijo }}</td>
+            <td>{{ alarma.cuenta }}</td>
+            <td>{{ alarma.protocolo }}</td>
+            <td>{{ alarma.fecha }}</td>
+            <td>{{ alarma.hora }}</td>
+            <td><a href="{{alarma.video}}" download="{{alarma.video}}">Descargar Video</a></td>
+            <td>{{ alarma.x }}, {{ alarma.y }}, {{ alarma.z }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="{{ url_for('logout') }}">Cerrar Sesión</a>
+</body>
+
+</html>

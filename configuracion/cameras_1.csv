@@ -1,0 +1,8 @@
+nombre, posX, posY, posZ, fovH, fovV, imgAncho, imgAlto, pan, tilt
+Camara1, 0, 0, 2, 104, 55, 640, 360, 45, 35,rtsp://admin:Simetria2023@192.168.110.5/Streaming/Channels/101
+Camara2, 20, 0, 2, 112.1, 60, 640, 480, 135, 35,rtsp://admin:Simetria2023@192.168.110.2/Streaming/Channels/101
+CamaraPTZ, 3, 2, 4, 61, 33, 704, 576, -135, 35,rtsp://admin:DIADRON1234@192.168.110.3:554/cam/realmonitor?channel=1&subtype=0
+
+
+Camara1, 0, 0.4, 1, 104, 55, 1920, 1080, 45, 90,rtsp://admin:Simetria2023@192.168.110.5/Streaming/Channels/101
+Camara2, 3.5, 0.75, 1, 112.1, 60, 1920, 1080, 135, 90,rtsp://admin:Simetria2023@192.168.110.6/Streaming/Channels/101
